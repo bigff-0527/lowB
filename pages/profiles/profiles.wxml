@@ -1,0 +1,25 @@
+<!--pages/profiles/profiles.wxml-->
+<view class="userInfo">
+  <view class="userImg">
+    <image mode="widthFix" src="{{userInfo  ? userInfo.avatarUrl : '/image/userNull.png'}}" />
+  </view>
+  <button class="userBtn" open-type="getUserInfo" bindgetuserinfo="getUserInfo" >{{userInfo ? userInfo.nickName : 'b站登录'}}</button>
+
+</view>
+<view class="history">
+  <view class="indexesTitle">
+    <text>历史记录</text>
+    <text class="more" bindtap="viewMore">查看更多></text>
+  </view>
+  <view class="historyList">
+    <view class="historyItem" wx:for="{{historyList}}" wx:if="{{index<3}}" bindtap="videoShow" data-bvid="{{item.bvid}}" data-historyList="{{item}}">
+      <image src="{{item.cover || item.pic}} " />
+      <view class="videoTitle">
+        <text>{{item.title}}</text>
+      </view>
+    </view>
+  </view>
+</view>
+<view class="logOut" wx:if="{{userInfo}}">
+  <text bindtap="logOut">退出>></text>
+</view>

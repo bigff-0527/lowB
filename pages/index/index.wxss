@@ -1,0 +1,320 @@
+/**index.wxss**/
+.index{
+  padding: 10px 10px 0;
+}
+.seacher{
+  background: white;
+  height: 30px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9;
+  
+}
+
+.seacher input{
+  border-radius: 10px;
+  background: #f6f6f6;
+  padding: 3px 8%;
+  width: 79%;
+
+  margin: 0 auto;
+  font-size: 12px;
+  font-weight: 100;
+}
+.seacher image{
+  width: 3%;
+  height: 20px;
+  position: fixed;
+  top: 0.5%;
+  z-index: 9;
+  margin-left: 20px;
+}
+.nav{
+  margin: 20px 20px 0;
+  padding: 15px;
+  display: flex;
+
+
+  background: white;
+}
+.navItem{
+  flex: 1;
+  font-size: 14px;
+  text-align: center;
+}
+.active{
+    color: pink;
+    padding-bottom: 5px;
+    border-bottom: 1px solid pink;
+}
+
+.video{
+  display: flex;
+  flex-flow: column;
+}
+.videoItem{
+  flex: 1;
+  border-bottom: 0.5px solid #f6f6f6;
+  padding: 8px;
+}
+.videoItem image{
+  width: 40%;
+  height: 90px;
+  border-radius: 5px;
+  margin-right: 5px;
+  float: left;
+}
+.videoTitle{
+  font-size: 13px;
+  height: 35px;
+
+  word-break: break-all;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+
+}
+.rcmd_reason{
+  height: 20px;
+  padding-bottom: 4px;
+  
+}
+.rcmd_reason-content{
+  padding: 1px;
+
+}
+
+.rcmd_reason-content text{
+  margin-left: 3px;
+  border: 0.5px solid orange;
+  font-size: 8px;
+  color: orange;
+  padding: 1px;
+  border-radius: 3px;
+}
+.owner{
+  font-size: 12px;
+  color: #bfbfbf;
+  margin: 1px 0;
+}
+.owner image {
+ height: 16px;
+  width: 5%;
+}
+.stat{
+  font-size: 12px;
+  color: #bfbfbf;
+  margin: 1px 0;
+}
+.stat image{
+  height: 15px;
+  width: 5%;
+}
+
+swiper-item{
+  display: flex;
+  flex-flow:column
+}
+
+
+/* 追番week导航 */
+
+.themDate{
+  display: flex;
+ 
+}
+.weekItem{
+  text-align: center;
+  flex: 1;
+  font-size: 12px;
+  height: 25px;
+  line-height: 25px;
+  
+}
+.clickActive{
+  margin:  0 auto;
+  width: 50px;
+  border-radius: 10px;
+  color: white !important;
+  background: pink;
+}
+.dayActive01{
+  color: rgb(255, 144, 162);
+}
+
+/* 番剧表 */
+.themVideo{
+  display: flex;
+  flex-wrap:wrap;
+  flex-direction: row;
+
+ 
+  border-bottom: 0.5px solid #f6f6f6;
+}
+.themVideoItem {
+  flex: 0 0 25%;
+  
+  margin: 8px 0px ;
+}
+.themVideoItem image{
+ 
+  width: 90%;
+  height: 70px;
+  border-radius: 5px;
+}
+.seasons.title{
+  margin-top: -10px;
+  font-size: 12px;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  word-break: break-all;
+}
+.seasons.pub_index{
+  
+  font-size: 10px;
+  color: #c9c9c9;
+}
+
+/* 索引 */
+.indexes{
+  padding: 0 0 5px;
+  border-bottom: 0.5px solid #f6f6f6;
+}
+.indexesTitle{
+  display: flex;
+}
+.indexesTitle text{
+  flex: 1;
+  font-weight: 100;
+  margin: 5px 0;
+}
+.more{
+  font-size: 10px;
+  color: #c9c9c9;
+  text-align: right;
+}
+.indexesCount{
+  display: flex;
+  flex-wrap:wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  text-align: center;
+}
+.indexesItem{
+  flex: 0 0 1;
+  width: 30%;
+  height: 35px;
+  line-height: 35px;
+  background: #f6f6f6;
+  margin: 5px 0;
+  border-radius: 5px;
+  font-size: 12px;
+  font-weight: 100;
+}
+
+
+.cartoonRecommend{
+  padding:10px 0
+}
+.seasonsList{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 5px;
+}
+.seasonsListItem{
+  flex: 0 0 30%;
+  margin: 5px;
+  height: 150px;
+}
+/* .seasons-title{
+  margin-top: -20px;
+} */
+.seasonsListItem image{
+  width: 100%;
+  height: 150px;
+  border-radius: 3px;
+}
+.seasonsListItem-title{
+  font-size: 12px;
+  position: relative;
+  top: -40px;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  word-break: break-all;
+}
+.seasonsListItem-pub_index{
+  position: relative;
+  top: -38px;
+  font-size: 10px;
+  color: #c9c9c9;
+}
+
+.badge1{
+  margin-left: 48% ;
+  position: relative;
+  top: -150px;
+  background: #db639b;
+  padding: 3px 6px;
+  color: white;
+  font-size: 10px;
+  border-radius: 3px;
+  font-weight: 100;
+}
+.badge2{
+  margin-left: 60%;
+  text-align: right;
+  position: relative;
+  top: -150px;
+  background: #0095da;
+  padding: 3px 6px;
+  color: white;
+  font-size: 10px;
+  border-radius: 3px;
+  font-weight: 100;
+}
+.badgeNull{
+  /* position: relative;
+  top: -153px;
+  margin-left: 70%;
+  padding: 3px 6px; */
+  
+  position: relative;
+  top: -153px;
+
+  padding: 3px 6px;
+  
+  font-size: 10px;
+  border-radius: 3px;
+  font-weight: 100;
+}
+.refresh{
+  padding: 50px 0 0px;
+  text-align: center;
+  
+}
+.refresh button{
+  background: white;
+  height: 20px;
+  padding: 0 !important;
+  width: 20% !important;
+}
+.refresh  image{
+  width: 5% !important;
+  height: 15px;
+  margin-right: 2px;
+  vertical-align:middle;
+}
+.refresh  text{
+ font-weight: 200;
+  font-size: 12px;
+  color: #db639b;
+}

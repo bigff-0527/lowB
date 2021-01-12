@@ -1,0 +1,20 @@
+<!-- pages/classifyShow/classifyShow.wxml
+<view class="classTitle">
+  <view class="classTitleNav">
+  <scroll-view class="renwu-title-items" scroll-x="true" >
+    <view class="{{ activeTab == index ? ' active renwu-title-item ' : 'renwu-title-item'}}" 
+    wx:for="{{classData.title}}" bindtap="navActive" data-navActive="{{index}}" >
+    {{item.name}}
+    </view>
+  </scroll-view>
+  </view>
+  <swiper style="height: {{visualHeight ?  visualHeight-30+'px' : 'auto'}}" current="{{activeTab}}" bindchange="bindchange">
+    <swiper-item wx:for="{{classData.title}}">
+      <scroll-view style="height: {{visualHeight ?  visualHeight-30+'px' : 'auto'}}">
+        {{item.rid}}
+      </scroll-view>
+    </swiper-item>
+  </swiper>
+</view> -->
+
+<web-view src="https://m.bilibili.com/channel/{{classData.rid}}"></web-view>

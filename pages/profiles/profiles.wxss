@@ -1,0 +1,84 @@
+.userInfo{
+  text-align: center;
+  padding:  5% 0;
+  border-bottom: 0.2px solid #c9c9c9;
+}
+.userImg {
+  background: #ebebeb;
+  /* border: 1px solid red; */
+  width: 15%;
+
+  
+  border-radius: 100%;
+  overflow: hidden;
+  margin: 0 auto;
+}
+.userInfo image{
+  width: 100%;
+ 
+  
+  
+  
+}
+.userBtn{
+  margin-top: 20px;
+  width: 20%;
+  padding: 0px 3px;
+  font-size: 12px;
+  background: pink;
+  color: white;
+}
+.indexesTitle{
+  display: flex;
+}
+.indexesTitle text{
+  flex: 1;
+  font-weight: 100;
+  margin: 5px 0;
+}
+.more{
+  font-size: 10px;
+  color: #c9c9c9;
+  text-align: right;
+}
+.history{
+  padding: 10px 5px;
+}
+.historyList{
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  /* justify-content: space-between; */
+  border-bottom: 0.2px solid #c9c9c9;
+  padding-bottom: 10px;
+}
+.historyItem{
+  flex: 0 0 30%;
+  font-size: 12px;
+  margin: 5px 5px;
+}
+.historyItem image{
+  border-radius: 5px;
+  width: 100%;
+  height: 70px;
+}
+.videoTitle{
+  font-size: 13px;
+  height: 35px;
+  word-break: break-all;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+
+}
+.logOut{
+  text-align: center;
+  margin-top: 100px;
+}
+.logOut text{
+  
+  color: #c9c9c9;
+  font-size: 15px;
+}

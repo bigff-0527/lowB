@@ -1,0 +1,159 @@
+.seasonNav{
+  display: flex;
+  height: 30px;
+  border-bottom: 0.5px solid #c9c9c9;
+}
+.seasonNavItem{
+  flex: 1;
+  text-align: center;
+  font-weight: 200;
+  color: #9c9c9c;
+  font-size: 14px;
+}
+.seasonNavItemV{
+  margin: 2px;
+}
+
+
+/* 动漫列表 */
+.cartoonRecommend{
+  padding:10px 0
+}
+.seasonsList{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 5px;
+  
+}
+.seasonsListItem{
+  flex: 0 0 30%;
+  margin: 5px;
+  margin-bottom: 40px;
+  height: 150px;
+  
+}
+/* .seasons-title{
+  margin-top: -20px;
+} */
+.seasonsListItem image{
+  width: 100%;
+  height: 150px;
+  border-radius: 3px;
+}
+.seasonsListItem-title{
+  font-size: 12px;
+  position: relative;
+  top: -60px;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  word-break: break-all;
+}
+.seasonsListItem-titleNull{
+  font-size: 12px;
+  position: relative;
+  top: -40px;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  word-break: break-all;
+}
+.seasonsListItem-pub_index{
+  position: relative;
+  top: -65px;
+  font-size: 10px;
+  color: #c9c9c9;
+}
+.seasonsListItem-pub_indexNull{
+  position: relative;
+  top: -45px;
+  font-size: 10px;
+  color: #c9c9c9;
+}
+
+.badge1{
+  margin-left: 50% ;
+  position: relative;
+  top: -153px;
+  background: #db639b;
+  padding: 3px 6px;
+  color: white;
+  font-size: 10px;
+  border-radius: 3px;
+  font-weight: 100;
+}
+.badge2{
+  margin-left: 68%;
+  text-align: right;
+  position: relative;
+  top: -153px;
+  background: #0095da;
+  padding: 3px 6px;
+  color: white;
+  font-size: 10px;
+  border-radius: 3px;
+  font-weight: 100;
+}
+.badgeNull{
+  /* position: relative;
+  top: -153px;
+  margin-left: 70%;
+  padding: 3px 6px; */
+  
+  position: relative;
+  top: -153px;
+
+  padding: 3px 6px;
+  
+  font-size: 10px;
+  border-radius: 3px;
+  font-weight: 100;
+}
+.order{
+  position: relative;
+  top: -50px;
+  left: 5px;
+  /* margin-top: -30%; */
+  font-size: 12px;
+  font-weight: 500;
+  color: white
+}
+.orderNull{
+  position: relative;
+  top: -28px;
+  left: -10px;
+  /* margin-top: -30%; */
+  font-size: 12px;
+  font-weight: 500;
+  color: white
+}
+.navActive{
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background: rgba(100, 100, 100, 0.2);
+
+}
+.navItemAll{
+  flex-wrap: wrap;
+  
+  position: fixed;
+  right: 0;
+  left: 0;
+  padding-top: 10px;
+  background: white;
+  width: 100%;
+  display: flex;
+  z-index: 999;
+}
+.navItemAll .navItemAllItem {
+  flex: 0 0 25%;
+  padding-bottom: 10px;
+
+}
+.clickActive{
+  color: #db639b;
+}

@@ -1,0 +1,22 @@
+  <scroll-view scroll-y="true" class="page-section-spacing" style="height: {{visual?visual-79.2+'px' : 'auto'}}" >
+      <view class="video">
+        <view class="videoItem" wx:for="{{historyList}}" bindtap="videoShow" data-bvid="{{item.bvid}}" data-historyList="{{item}}">
+          <image src="{{item.pic || item.cover}}" />
+          <view class="videoTitle">
+            <text>{{item.title}}</text>
+          </view>
+          <!-- <view class="rcmd_reason">
+            <view class="rcmd_reason-content" wx:if="false">
+              <text>{{item.rcmd_reason.content}}</text>
+            </view>
+          </view> -->
+          <view class="owner">
+            <image src="../../image/ownerIcon.svg" />
+            <text> {{item.owner.name}}</text>
+          </view>
+          <view class="stat">
+            <text>{{historyDateList[index]}}</text>
+          </view>
+        </view>
+      </view>
+    </scroll-view>

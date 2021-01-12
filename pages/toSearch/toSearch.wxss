@@ -1,0 +1,29 @@
+.seacher{
+  background: white;
+  height: 30px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9;
+  
+}
+
+.seacher input{
+  border-radius: 10px;
+  background: #f6f6f6;
+  padding: 3px 8%;
+  width: 79%;
+
+  margin: 0 auto;
+  font-size: 12px;
+  font-weight: 100;
+}
+.seacher image{
+  width: 3%;
+  height: 20px;
+  position: fixed;
+  top: 0.5%;
+  z-index: 9;
+  margin-left: 20px;
+}

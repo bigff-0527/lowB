@@ -1,0 +1,13 @@
+<!-- <template name="seasonList">
+
+  <view class="seasonsListItem" 
+    wx:if="{{index >= refreshSeasonIndex && index < refreshSeason}}" bindtap="cartoonShow"
+    data-playid="{{item.season_id}}" data-historyList="{{item}}">
+    <image src="{{item.cover}}" />
+    <text wx:if="{{item.badge === '会员抢先' || item.badge === '会员专享'}}" class="badge1">{{item.badge}}</text>
+    <text wx:elif="{{item.badge === '独家'}}" class="badge2">{{item.badge}}</text>
+    <text wx:else decode='true' class="badgeNull">&nbsp;</text>
+    <text class="seasonsListItem-title">\n{{item.title}}\n</text>
+    <text class="seasonsListItem-pub_index">{{item.desc}}</text>
+  </view>
+</template> -->

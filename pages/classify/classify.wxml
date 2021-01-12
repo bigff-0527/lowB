@@ -1,0 +1,6 @@
+<view class="classifyList">
+  <view class="classifyItem" wx:for="{{classifyList}}" bindtap="classActive" data-classActive="{{item}}">
+    <image mode="widthFix" src="{{item.img}}" />
+    <text>\n{{item.name}}</text>
+  </view>
+</view>

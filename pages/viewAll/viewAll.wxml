@@ -1,0 +1,63 @@
+<!--pages/viewAll/viewAll.wxml-->
+<view class="seasonNav">
+  <view class="seasonNavItem" bindtap="seasonNavItemClick" data-seasonNavItemIndex="0">
+    <text wx:if="{{navItemAllTypeflag}}">全部类型</text>
+    <text wx:else
+      class="{{navItemAllTypeflag ? '' : 'clickActive'}}">{{season_versionList[navItemAllTypeIndex].name}}</text>
+    <text wx:if="{{seasonNavItemFlag == 0}}" class="{{navItemAllTypeflag ? ' seasonNavItemV' :'clickActive seasonNavItemV'}}">∧</text>
+    <text wx:else class="{{navItemAllTypeflag ? ' seasonNavItemV' :'clickActive seasonNavItemV'}}">∨</text>
+    <view wx:if="{{seasonNavItemFlag == 0}}" class="navItemAll">
+      <view wx:for="{{season_versionList}}" class="navItemAllItem" data-clickTypeIndex="{{index}}" bindtap="selectClick">
+        <text class="{{navItemAllTypeIndex == index ? 'clickActive':''}}">{{item.name}}</text>
+      </view>
+    </view>
+  </view>
+
+  <view class="seasonNavItem" bindtap="seasonNavItemClick" data-seasonNavItemIndex="1">
+    <text wx:if="{{navItemAllStyleflag}}">全部类型</text>
+    <text wx:else
+      class="{{navItemAllStyleflag ? '' : 'clickActive'}}">{{styleList[navItemAllStyleIndex].name}}</text>
+    <text wx:if="{{seasonNavItemFlag == 1}}" class="{{navItemAllStyleflag ? ' seasonNavItemV' :'clickActive seasonNavItemV'}}">∧</text>
+    <text wx:else class="{{navItemAllStyleflag ? ' seasonNavItemV' :'clickActive seasonNavItemV'}}">∨</text>
+    <view wx:if="{{seasonNavItemFlag == 1}}" class="navItemAll">
+      <view wx:for="{{styleList}}" class="navItemAllItem" data-clickStyleIndex="{{index}}" bindtap="selectClick">
+        <text class="{{navItemAllStyleIndex == index ? 'clickActive':''}}">{{item.name}}</text>
+      </view>
+    </view>
+  </view>
+  <view class="seasonNavItem" bindtap="seasonNavItemClick" data-seasonNavItemIndex="2">
+    <text wx:if="{{navItemAllStateflag}}">全部类型</text>
+    <text wx:else
+      class="{{navItemAllStateflag ? '' : 'clickActive'}}">{{is_finishList[navItemAllStateIndex].name}}</text>
+    <text wx:if="{{seasonNavItemFlag == 2}}" class="{{navItemAllStateflag ? ' seasonNavItemV' :'clickActive seasonNavItemV'}}">∧</text>
+    <text wx:else class="{{navItemAllStateflag ? ' seasonNavItemV' :'clickActive seasonNavItemV'}}">∨</text>
+    <view wx:if="{{seasonNavItemFlag == 2}}" class="navItemAll">
+      <view wx:for="{{is_finishList}}" class="navItemAllItem" data-clickStateIndex="{{index}}" bindtap="selectClick">
+        <text class="{{navItemAllStateIndex == index ? 'clickActive':''}}">{{item.name}}</text>
+      </view>
+    </view>
+  </view>
+</view>
+<view class="{{seasonNavItemFlag?'navActive':''}}">
+  <scroll-view bindscrolltolower="onReachBottom" scroll-y="true" style="height: {{visual ? visual+'px' : 'auto'}}">
+    <view class="cartoonRecommend">
+      <view class="seasonsList">
+        <view class="seasonsListItem" wx:for="{{seasonsList}}" bindtap="cartoonShow"
+          data-playid="{{item.season_id}}" data-historyList="{{item}}">
+          <image src="{{item.cover}}" />
+          <text wx:if="{{item.badge === '会员抢先' || item.badge === '会员专享'}}" class="badge1">{{item.badge}}</text>
+          <text wx:elif="{{item.badge === '独家'}}" class="badge2">{{item.badge}}</text>
+          <text wx:else decode='true' class="badgeNull">&nbsp;</text>
+          <text wx:if="{{item.badge === '会员抢先' || item.badge === '会员专享' || item.badge === '独家' }}" class="order">{{item.order}}</text>
+          <text wx:else class="orderNull">{{item.order}}</text>
+          <text wx:if="{{item.badge === '会员抢先' || item.badge === '会员专享' || item.badge === '独家' }}" class="seasonsListItem-title">\n{{item.title}}\n</text>
+          <text wx:else class="seasonsListItem-titleNull">\n{{item.title}}\n</text>
+          <text wx:if="{{item.badge === '会员抢先' || item.badge === '会员专享' || item.badge === '独家' }}" class="seasonsListItem-pub_index">{{item.index_show}}</text>
+          <text wx:else class="seasonsListItem-pub_indexNull">{{item.index_show}}</text>
+        </view>
+      </view>
+    </view>
+  </scroll-view>
+</view>
+
+<view></view>

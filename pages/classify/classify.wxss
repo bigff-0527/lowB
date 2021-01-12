@@ -1,0 +1,23 @@
+/* pages/classify/classify.wxss */
+.classifyList{
+  display: flex;
+  flex-wrap: wrap;
+  flex-flow: wrap;
+  
+  text-align: center;
+}
+.classifyItem{
+  flex: 0 0 24%;
+  height: 50px;
+  margin: 8px 0;
+}
+.classifyItem image{
+  width: 30%;
+
+  object-fit:cover
+}
+.classifyItem text{
+  font-size: 12px;
+  font-weight: 100;
+
+}

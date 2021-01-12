@@ -1,0 +1,43 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/classify/classify",
+    "pages/profiles/profiles",
+    "pages/logs/logs",
+    "pages/videoShow/videoShow",
+    "pages/cartoonShow/cartoonShow",
+    "pages/viewAll/viewAll",
+    "pages/toSearch/toSearch",
+    "pages/classifyShow/classifyShow",
+    "pages/history/history",
+    "compente/season_item/season_item"
+  ],
+  "tabBar": {
+    "selectedColor": "#db639b",
+    "list": [{
+      "pagePath": "pages/index/index",
+      "text": "首页",
+      "iconPath": "/image/home.png",
+      "selectedIconPath": "/image/home_active.png"
+    },
+    {
+      "pagePath": "pages/classify/classify",
+      "text": "分区",
+      "iconPath": "/image/classify.png",
+      "selectedIconPath": "/image/classify_active.png"
+    },
+    {
+      "pagePath": "pages/profiles/profiles",
+      "text": "我的",
+      "iconPath": "/image/profiles.png",
+      "selectedIconPath": "/image/profiles_active.png"
+    }]
+  },
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "捞b",
+    "navigationBarTextStyle":"black"
+  },
+  "sitemapLocation": "sitemap.json"
+}
